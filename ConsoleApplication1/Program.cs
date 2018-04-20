@@ -10,6 +10,31 @@ namespace ConsoleApplication1
 {
     class Program
     {
+        void addProject(String url)
+        {
+            Process p = new Process();
+            ProcessStartInfo info = new ProcessStartInfo();
+            info.FileName = "cmd.exe";
+            info.RedirectStandardInput = true;
+            info.UseShellExecute = false;
+
+            p.StartInfo = info;
+            p.Start();
+
+            using (StreamWriter sw = p.StandardInput)
+            {
+                if (sw.BaseStream.CanWrite)
+                {
+                    sw.WriteLine(@"cd C:\Users\Alisha_Das\Documents\visual studio 2015\Projects\ConsoleApplication1");
+                    sw.WriteLine(@"git init");
+                    sw.WriteLine(@"git add .");
+                    sw.WriteLine("git commit -m \"First Commint\"");
+                    sw.WriteLine(@"git remote add origin1234 "+ url);
+                    sw.WriteLine(@"git push -u origin1234 master");
+
+                }
+            }
+        }
         static void Main(string[] args)
         {
             //Process process = new Process();
