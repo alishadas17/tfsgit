@@ -64,8 +64,8 @@ namespace ConsoleApplication1
                     sw.WriteLine(@"git init");
                     sw.WriteLine(@"git add .");
                     sw.WriteLine("git commit -m \"First Commint\"");
-                    sw.WriteLine(@"git remote add origin12345 https://github.com/alishadas17/GitDemo.git");
-                    sw.WriteLine(@"git push -u origin12345 master");
+                    sw.WriteLine(@"git remote add tfsgit https://github.com/alishadas17/tfsgit.git");
+                    sw.WriteLine(@"git push -u tfsgit master");
 
                 }
             }
