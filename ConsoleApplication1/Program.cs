@@ -29,8 +29,8 @@ namespace ConsoleApplication1
                     sw.WriteLine(@"git init");
                     sw.WriteLine(@"git add .");
                     sw.WriteLine("git commit -m \"First Commint\"");
-                    sw.WriteLine(@"git remote add origin1234 "+ url);
-                    sw.WriteLine(@"git push -u origin1234 master");
+                    sw.WriteLine(@"git remote add origin124 "+ url);
+                    sw.WriteLine(@"git push -u origin124 master");
 
                 }
             }
@@ -64,8 +64,8 @@ namespace ConsoleApplication1
                     sw.WriteLine(@"git init");
                     sw.WriteLine(@"git add .");
                     sw.WriteLine("git commit -m \"First Commint\"");
-                    sw.WriteLine(@"git remote add origin1234 https://github.com/alishadas17/asd.git");
-                    sw.WriteLine(@"git push -u origin1234 master");
+                    sw.WriteLine(@"git remote add origin12345 https://github.com/alishadas17/GitDemo.git");
+                    sw.WriteLine(@"git push -u origin12345 master");
 
                 }
             }
